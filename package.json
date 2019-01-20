@@ -1,0 +1,22 @@
+{
+  "name": "practical.aspnetcore.signalr",
+  "version": "1.0.0",
+  "description": "Practical.AspNetCore.SignalR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smarigowda/Practical.AspNetCore.SignalR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smarigowda/Practical.AspNetCore.SignalR/issues"
+  },
+  "homepage": "https://github.com/smarigowda/Practical.AspNetCore.SignalR#readme",
+  "dependencies": {
+    "@aspnet/signalr": "^1.1.0"
+  }
+}
