@@ -15,8 +15,14 @@ connection.start().catch(error => {
 })
 
 document.getElementById('sendButton').addEventListener('click', function(event) {
+    const groupElement = document.getElementById('group');
+    const groupValue = groupElement.options[groupElement.selectedIndex].value;
+    let method = 'SendMessageToAll';
+    if(groupValue === 'Myself') {
+        method = 'SendMessageToCaller';
+    }
     const message = document.getElementById('message').value;
-    connection.invoke('SendMessageToAll', message).catch(error => {
+    connection.invoke(method, message).catch(error => {
         console.error(error);
     });
     event.preventDefault();

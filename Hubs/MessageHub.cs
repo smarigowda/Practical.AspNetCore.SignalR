@@ -9,5 +9,10 @@ namespace Practical.AspNetCore.SignalR
         {
             return Clients.All.SendAsync("ReceiveMessage", message);
         }
+
+        public Task SendMessageToCaller(string message)
+        {
+            return Clients.Caller.SendAsync("ReceiveMessage", message);
+        }
     }
 }
