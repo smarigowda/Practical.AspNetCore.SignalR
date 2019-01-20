@@ -1,7 +1,7 @@
 "use strict"
 
 const connection = new signalR.HubConnectionBuilder()
-    .withUrl("/messages")
+    .withUrl("https://localhost:5001/messages")
     .build();
 
 connection.on('ReceiveMessage', function(message) {
